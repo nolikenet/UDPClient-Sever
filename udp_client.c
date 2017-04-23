@@ -68,8 +68,8 @@ int main(void)
             die("Failed to recvfrom() \n");
         }
         
-        memset(buf, '\0', BUFLEN);
         puts(buf);
+        memset(buf, '\0', BUFLEN);
     }
  
     close(s);
